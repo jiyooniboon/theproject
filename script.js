@@ -1,20 +1,24 @@
 
 console.log("start");
 
-const todoButton = document.querySelector("button");
+const todoButton = document.getElementById("addNewTodo");
 const todoName = document.getElementById("name");
 const list = document.getElementById("curList");
+
+const buttons = document.querySelector("button");
+buttons.addEventListener("click", checkTodo);
 
 todoButton.addEventListener("click", btnPressAdd);
 
 function btnPressAdd() {
-    // open modal or dialogue? with form
-    // on submit form make new todo item
-    console.log(todoName.value);
-    const addTodo = document.createElement("li");
-    addTodo.textContent = todoName.value;
-    list.appendChild(addTodo);
-    console.log(addTodo);
+    const checkBtn = document.createElement("button");
+    checkBtn.textContent = todoName.value;
+    list.appendChild(checkBtn);
+
     todoName.value = "";
 }
 
+function checkTodo() {
+    console.log(buttons);
+
+}

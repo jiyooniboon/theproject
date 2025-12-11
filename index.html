@@ -3,36 +3,53 @@
 
 <head>
     <title>great job</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
-    <h1>the project 2025</h1>
+    <header>
+        <h1>the project 2025</h1>
+    </header>
 
-    <h3>part 1 the todo list</h3>
+    <nav>
 
-    <p>current list</p>
+    </nav>
 
-    <ul id="curList">
-        <li>todo 1</li>
-        <li>todo 2</li>
-    </ul>
+    <main>
+
+        <h3>part 1 the todo list</h3>
+
+        <section class="curList">
+            <p>current list</p>
+
+            <ul id ="curList">
+                <li><button>todo 1</button></li>
+                <li>todo 2</li>
+            </ul>
+        </section>
 
 
-    <input type="text" id="name"/>
-    <button>New todo</button>
 
-    <p>completed list</p>
-    
-    <ul id="compList">
+        <input type="text" id="name" />
+        <button id="addNewTodo">New todo</button>
 
-    </ul>
+        <section class="compList">
+            <p>completed list</p>
+
+            <ul id="compList">
+                <li>i did this</li>
+            </ul>
+        </section>
+
+
+    </main>
 
 
 
 
 </body>
 
-<script src="script.js"></script>
 
 </html>
