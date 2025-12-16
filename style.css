@@ -1,3 +1,24 @@
+.prev {
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 button {
     border: 0;
     text-align: center;
@@ -8,7 +29,8 @@ button:hover {
   background-color: gainsboro;
 }
 
-.compList button {
+button#done {
     text-decoration: line-through;
     color:gray;
 }
+
