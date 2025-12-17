@@ -2,6 +2,7 @@
 
 const todoName = document.createElement("input");
 todoName.type = "text";
+todoName.size = "10"
 
 const allItems = document.querySelector("div.container");
 allItems.addEventListener("click", (e) => {
@@ -43,7 +44,11 @@ function addTodo(e) {
 // listen for enter press, add new todo item to current list
 todoName.addEventListener("keydown", (e) => {
     if (e.key == 'Enter') {
-        addTodo(e);
+        try {
+            addTodo(e);
+        } catch {
+            console.log("enter");
+        }
 
     }
 });
